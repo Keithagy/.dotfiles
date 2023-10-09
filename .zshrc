@@ -70,7 +70,6 @@ plugins=(
   docker
   rust
   adb
-  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
