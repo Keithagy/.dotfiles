@@ -17,6 +17,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+	{ 'onsails/lspkind.nvim' },
 	'rebelot/kanagawa.nvim',
 	-- Detect tabstop and shiftwidth automatically
 	'tpope/vim-sleuth',
@@ -39,6 +40,7 @@ require('lazy').setup({
 			},
 		}
 	},
+	'simrat39/rust-tools.nvim',
 	{
 		-- LSP Configuration & Plugins
 		'neovim/nvim-lspconfig',
@@ -71,7 +73,7 @@ require('lazy').setup({
 		}
 	},
 	-- Useful plugin to show you pending keybinds.
-	{ 'folke/which-key.nvim',  opts = {} },
+	{ 'folke/which-key.nvim', opts = {} },
 	{
 		-- Adds git related signs to the gutter, as well as utilities for managing changes
 		'lewis6991/gitsigns.nvim',
@@ -168,10 +170,10 @@ vim.defer_fn(function()
 			'go',
 			'lua',
 			'python',
-			'rust',
 			'tsx',
 			'javascript',
 			'typescript',
+			'rust',
 			'vimdoc',
 			'vim'
 		},
@@ -245,7 +247,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
 	-- NOTE: Remember that lua is a real programming language, and as such it is possible
 	-- to define small helper and utility functions so you don't have to repeat yourself
 	-- many times.
@@ -259,7 +261,13 @@ local on_attach = function(_, bufnr)
 
 		vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
 	end
-
+	-- See `:help K` for why this keymap
+	if client.name == "rust_analyzer" then
+		nmap("K", ":RustHoverActions<cr>", "Hover Documentation")
+		nmap("<leader>gp", ":RustParentModule<cr>", "Parent Module")
+	else
+		nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
+	end
 	nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
 	nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
@@ -270,8 +278,6 @@ local on_attach = function(_, bufnr)
 	nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 	nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 
-	-- See `:help K` for why this keymap
-	nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 	nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
 	-- Lesser used LSP functionality
@@ -286,6 +292,15 @@ local on_attach = function(_, bufnr)
 	vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
 		vim.lsp.buf.format()
 	end, { desc = 'Format current buffer with LSP' })
+	nmap('<leader>f', ':Format<cr>', '[F]ormat buffer')
+	-- Show diagnostic popup on cursor hover
+	local diag_float_grp = vim.api.nvim_create_augroup("DiagnosticFloat", { clear = true })
+	vim.api.nvim_create_autocmd("CursorHold", {
+		callback = function()
+			vim.diagnostic.open_float(nil, { focusable = false })
+		end,
+		group = diag_float_grp,
+	})
 end
 
 -- document existing key chains
@@ -311,17 +326,37 @@ local servers = {
 	-- clangd = {},
 	-- gopls = {},
 	-- pyright = {},
-	rust_analyzer = {},
 	-- tsserver = {},
 	-- html = { filetypes = { 'html', 'twig', 'hbs'} },
-
 	lua_ls = {
 		Lua = {
 			workspace = { checkThirdParty = false },
 			telemetry = { enable = false },
 		},
 	},
+	rust_analyzer = {},
+	marksman = {},
 }
+-- -- rust-tools setup happens independently of nvim-lsp setup
+-- local rt = require("rust-tools")
+-- rt.setup({
+-- 	settings = {
+-- 		-- to enable rust-analyzer settings visit:
+-- 		-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
+-- 		["rust-analyzer"] = {
+-- 			-- enable clippy on save
+-- 			checkOnSave = {
+-- 				command = "clippy",
+-- 			},
+-- 		},
+-- 	},
+-- 	server = {
+-- 		on_attach = function(_, bufnr)
+-- 			-- Hover actions
+-- 			vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+-- 		end,
+-- 	},
+-- })
 
 -- Setup neovim lua configuration
 require('neodev').setup()
@@ -333,8 +368,59 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 -- Ensure the servers above are installed
 local mason_lspconfig = require 'mason-lspconfig'
 
-mason_lspconfig.setup {
+mason_lspconfig.setup({
 	ensure_installed = vim.tbl_keys(servers),
+})
+
+-- Configure LSP through rust-tools.nvim plugin.
+-- rust-tools will configure and enable certain LSP features for us.
+-- See https://github.com/simrat39/rust-tools.nvim#configuration
+local rust_tools_config = {
+	-- executor = require("rust-tools.executors").quickfix,
+
+	inlay_hints = {
+		auto = true,
+		parameter_hints_prefix = "<-",
+		other_hints_prefix = "->",
+	},
+	server = {
+		standalone = true,
+	},
+	-- dap = function()
+	-- 	local install_root_dir = vim.fn.stdpath "data" .. "/mason"
+	-- 	local extension_path = install_root_dir .. "/packages/codelldb/extension/"
+	-- 	local codelldb_path = extension_path .. "adapter/codelldb"
+	-- 	local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
+	--
+	-- 	return {
+	-- 		adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
+	-- 	}
+	-- end,
+}
+
+local rust_tools_rust_server = {
+	on_attach = on_attach,
+	settings = {
+		-- List of all options:
+		-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
+		["rust-analyzer"] = {
+			check = {
+				command = "clippy",
+				extraArgs = { "--all", "--", "-W", "clippy::all", "-W", "clippy::pedantic", "-W", "clippy::restriction", "-W",
+					"clippy::nursery", "-D", "warnings", },
+			},
+
+			-- rust-analyzer.server.extraEnv
+			-- neovim doesn"t have custom client-side code to honor this setting, it doesn't actually work
+			-- https://github.com/neovim/nvim-lspconfig/issues/1735
+			-- it's in init.vim as a real env variable
+			server = {
+				extraEnv = {
+					CARGO_TARGET_DIR = "target/rust-analyzer-check"
+				}
+			}
+		},
+	},
 }
 
 mason_lspconfig.setup_handlers {
@@ -345,21 +431,63 @@ mason_lspconfig.setup_handlers {
 			settings = servers[server_name],
 			filetypes = (servers[server_name] or {}).filetypes,
 		}
-	end
+	end,
+	["lua_ls"] = function()
+		require("lspconfig").lua_ls.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			settings = {
+				Lua = {
+					diagnostics = {
+						-- Get the language server to recognize the `vim` global
+						globals = { "vim" },
+					},
+				},
+			},
+		})
+	end,
+
+	["rust_analyzer"] = function()
+		require("rust-tools").setup({
+			-- rust_tools specific settings
+			tools = rust_tools_config,
+			-- on_attach is actually bound rust-tools server
+			server = rust_tools_rust_server,
+			-- I use lsp-status which adds itself to the capabilities table
+			capabilities = capabilities,
+		})
+	end,
 }
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
 local cmp = require 'cmp'
+local lspkind = require("lspkind")
 local luasnip = require 'luasnip'
 require('luasnip.loaders.from_vscode').lazy_load()
 luasnip.config.setup {}
+lspkind.init({})
 
 cmp.setup {
 	snippet = {
 		expand = function(args)
 			luasnip.lsp_expand(args.body)
 		end,
+	},
+	formatting = {
+		format = lspkind.cmp_format({
+			mode = "symbol_text",
+			menu = {
+				nvim_lsp = "[LSP]",
+				nvim_lsp_signature_help = "[Signature]",
+				nvim_lsp_document_symbol = "[Symbol]",
+				buffer = "[Buffer]",
+				luasnip = "[LuaSnip]",
+				path = "[Path]",
+				cmp_tabnine = "[T9]",
+				crates = "[crates.io]",
+			},
+		}),
 	},
 	mapping = cmp.mapping.preset.insert {
 		['<C-n>'] = cmp.mapping.select_next_item(),
@@ -390,9 +518,16 @@ cmp.setup {
 			end
 		end, { 'i', 's' }),
 	},
+	-- Installed sources
 	sources = {
-		{ name = 'nvim_lsp' },
-		{ name = 'luasnip' },
+		{ name = "nvim_lsp" },
+		{ name = "nvim_lsp_signature_help" },
+		{ name = "nvim_lsp_document_symbol" },
+		{ name = "luasnip" },
+		{ name = "path" },
+		{ name = "buffer" },
+		{ name = "crates" },
+		{ name = "cmp_tabnine" },
 	},
 }
 
