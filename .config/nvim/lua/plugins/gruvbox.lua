@@ -5,7 +5,7 @@ return {
     priority = 1000,
     config = true,
     opts = {
-      transparent_mode = true,
+      contrast = "hard", -- can be "hard", "soft" or empty string
       dim_inactive = true,
     },
   },
