@@ -1,0 +1,1 @@
+{"schema_version":"1.1","primary_source":{"id":"pkg:github\/mvdan\/sh@v3.7.0","type":"registry+v1"},"links":{"opt":{},"bin":{"shfmt":"shfmt_v3.7.0_darwin_arm64"},"share":{}},"name":"shfmt","metrics":{"start_time":1697283292268,"completion_time":1697283294158},"secondary_sources":[]}

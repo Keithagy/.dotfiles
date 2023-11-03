@@ -1,0 +1,1 @@
+{"metrics":{"start_time":1698637702527,"completion_time":1698637703550},"name":"js-debug-adapter","primary_source":{"type":"registry+v1","id":"pkg:github\/microsoft\/vscode-js-debug@v1.84.0"},"schema_version":"1.1","links":{"bin":{"js-debug-adapter":"js-debug-adapter"},"opt":{},"share":{}},"secondary_sources":[]}

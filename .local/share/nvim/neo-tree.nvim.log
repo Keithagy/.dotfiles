@@ -1,0 +1,169 @@
+[INFO  Sat Oct 14 20:18:30 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut public to clipboard
+[INFO  Sat Oct 14 20:18:35 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/public
+[INFO  Sat Oct 14 21:25:15 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sat Oct 14 21:25:17 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[ERROR Sat Oct 14 21:25:26 2023] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:705: Error opening file: vim/_editor.lua:418: nvim_exec2(): Vim(buffer):E812: Autocommands changed buffer or buffer name
+[INFO  Sat Oct 14 21:44:06 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed disabled.lua successfully
+[INFO  Sun Oct 15 14:29:36 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed joural.md successfully
+[INFO  Sun Oct 15 14:29:44 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed journal.md successfully
+[INFO  Sun Oct 15 15:43:38 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun Oct 15 16:00:31 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed .eslintignore successfully
+[INFO  Sun Oct 15 16:17:33 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun Oct 15 16:21:58 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun Oct 15 16:55:07 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/assets
+[WARN  Sun Oct 15 20:19:08 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:601: Could not rename the files
+[INFO  Sun Oct 15 20:19:19 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/helpers/axios
+[INFO  Mon Oct 16 12:29:38 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon Oct 16 12:40:26 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon Oct 16 15:21:37 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon Oct 16 15:48:27 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 15:48:27 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 15:48:48 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/dashboard_v2/node_modules
+[INFO  Mon Oct 16 15:48:57 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 15:48:57 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 15:48:57 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 16:24:13 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/dashboard_v2/node_modules
+[INFO  Mon Oct 16 16:24:33 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 16:24:33 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 16:24:33 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 18:40:04 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon Oct 16 18:44:03 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon Oct 16 18:44:06 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 18:44:07 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 18:44:10 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Mon Oct 16 18:47:51 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed .env.staging successfully
+[INFO  Mon Oct 16 21:33:15 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages
+[ERROR Mon Oct 16 21:33:42 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:188: Could not move the files from /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app to /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app/./app/ : EINVAL: invalid argument: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app -> /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app/./app/
+[ERROR Mon Oct 16 21:34:35 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:188: Could not move the files from /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app to /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app/./app : EINVAL: invalid argument: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app -> /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app/./app
+[INFO  Mon Oct 16 21:34:58 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/app
+[INFO  Mon Oct 16 21:35:24 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/.vite
+[INFO  Mon Oct 16 21:36:52 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/app
+[INFO  Mon Oct 16 21:37:20 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages
+[INFO  Mon Oct 16 21:37:28 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/node_modules/pages
+[INFO  Mon Oct 16 21:43:03 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut App.tsx to clipboard
+[INFO  Mon Oct 16 21:43:04 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut App.tsx to clipboard
+[WARN  Mon Oct 16 21:48:58 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:582: /Users/keith/Develop/lionsbot/frontend/gcc-v2/pages/app.tsx  already exists
+[INFO  Mon Oct 16 21:49:16 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed app.ts successfully
+[INFO  Mon Oct 16 21:49:25 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed app.tsx successfully
+[INFO  Mon Oct 16 21:52:02 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed index.rsx successfully
+[INFO  Mon Oct 16 21:52:05 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed index.tsx successfully
+[INFO  Mon Oct 16 22:01:13 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut package.json to clipboard
+[INFO  Mon Oct 16 23:08:44 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed _app.tsx successfully
+[INFO  Mon Oct 16 23:34:23 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Mon Oct 16 23:35:42 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:482: failed to delete  /Users/keith/Develop/lionsbot/frontend/gcc-v2/dist/static/chunks
+[ERROR Mon Oct 16 23:35:42 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:482: failed to delete  /Users/keith/Develop/lionsbot/frontend/gcc-v2/dist/static
+[INFO  Tue Oct 17 02:22:28 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut axios.ts to clipboard
+[ERROR Tue Oct 17 04:07:03 2023] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:126: debounce  filesystem_navigate  error:  ...h/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:183: Invalid window id: 3907
+[INFO  Tue Oct 17 15:05:55 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 17 15:05:55 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Tue Oct 17 15:05:56 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 17 15:05:56 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Tue Oct 17 16:45:43 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 17 21:48:45 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut index.tsx to clipboard
+[INFO  Tue Oct 17 21:53:07 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut index.tsx to clipboard
+[INFO  Tue Oct 17 21:57:48 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed index.tsx successfully
+[INFO  Tue Oct 17 21:59:54 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[INFO  Tue Oct 17 22:01:09 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut http to clipboard
+[INFO  Tue Oct 17 22:01:13 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut constants.ts to clipboard
+[INFO  Tue Oct 17 22:01:16 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/helpers
+[INFO  Tue Oct 17 22:01:27 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed types.ts successfully
+[INFO  Tue Oct 17 22:01:28 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut types.ts to clipboard
+[INFO  Tue Oct 17 22:01:31 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut types to clipboard
+[INFO  Tue Oct 17 22:01:33 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/types
+[WARN  Tue Oct 17 22:02:01 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:582: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/context/user.tsx  already exists
+[INFO  Tue Oct 17 22:02:03 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed user.ts successfully
+[INFO  Tue Oct 17 22:11:27 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/pages/index
+[INFO  Tue Oct 17 22:13:30 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed fetch successfully
+[INFO  Tue Oct 17 22:13:44 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut fetch to clipboard
+[INFO  Tue Oct 17 22:13:46 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/fetch
+[INFO  Tue Oct 17 22:52:09 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed user.tsx successfully
+[ERROR Tue Oct 17 23:58:46 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[ERROR Tue Oct 17 23:58:46 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[INFO  Tue Oct 17 23:59:06 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[ERROR Wed Oct 18 00:06:16 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[ERROR Wed Oct 18 00:06:16 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[INFO  Wed Oct 18 00:42:12 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Wed Oct 18 00:42:18 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/node_modules
+[INFO  Wed Oct 18 00:42:22 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/pages
+[INFO  Wed Oct 18 00:42:23 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/public
+[INFO  Wed Oct 18 00:42:25 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src
+[INFO  Wed Oct 18 16:45:15 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Wed Oct 18 17:34:39 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed login-background.png successfully
+[INFO  Wed Oct 18 17:57:44 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut node_modules_@chakra-ui_slider_dist_c66957._.js to clipboard
+[INFO  Thu Oct 19 02:13:54 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Thu Oct 19 02:14:40 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed _document.rs successfully
+[INFO  Thu Oct 19 02:14:43 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed _document.js successfully
+[INFO  Thu Oct 19 02:22:16 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed _document.ts successfully
+[INFO  Thu Oct 19 02:23:15 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed _document.tsx successfully
+[INFO  Thu Oct 19 05:40:19 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied dashboard to clipboard
+[INFO  Thu Oct 19 14:19:50 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed install.tsx successfully
+[INFO  Thu Oct 19 14:39:10 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed [slug].tsx successfully
+[INFO  Thu Oct 19 14:39:18 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut [slug].tsx to clipboard
+[INFO  Thu Oct 19 15:04:04 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed [chosen_platform].tsx successfully
+[INFO  Thu Oct 19 15:11:12 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed [platform].tsx successfully
+[WARN  Thu Oct 19 15:33:47 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:601: Could not rename the files
+[INFO  Thu Oct 19 15:34:03 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed GAuthCardHeader.tsx successfully
+[ERROR Thu Oct 19 19:58:14 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:58:14 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:58:55 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:58:55 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:58:56 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:58:56 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:59:54 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[ERROR Thu Oct 19 19:59:54 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages/RobotDetailsLogs
+[INFO  Mon Oct 23 17:07:16 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Mon Oct 23 18:06:22 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider
+[ERROR Mon Oct 23 18:06:22 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider
+[ERROR Mon Oct 23 18:06:31 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider
+[ERROR Mon Oct 23 18:06:31 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/components/lionsbot-web-app-ui-component-library/components/Slider
+[INFO  Tue Oct 24 10:24:50 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 24 11:50:56 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 24 11:51:01 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/.next
+[INFO  Tue Oct 24 11:51:03 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/dist
+[INFO  Tue Oct 24 13:44:34 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/node_modules
+[INFO  Tue Oct 24 13:45:08 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src
+[INFO  Tue Oct 24 13:45:10 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Tue Oct 24 13:50:44 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src
+[ERROR Tue Oct 24 13:50:44 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages
+[ERROR Tue Oct 24 13:50:44 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src
+[ERROR Tue Oct 24 13:50:44 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/pages
+[INFO  Wed Oct 25 17:33:17 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed InitAuthCheck.tsx successfully
+[INFO  Wed Oct 25 18:00:21 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/routes
+[INFO  Thu Oct 26 13:37:29 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed Setup2FA.tsx successfully
+[INFO  Thu Oct 26 14:28:59 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Thu Oct 26 14:29:00 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[INFO  Thu Oct 26 16:18:40 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/user/login/pages/2fa/setup/ScanSecret.tsx
+[INFO  Thu Oct 26 22:34:54 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/user/login/pages/2fa/setup/SelectPlatform.tsx
+[INFO  Thu Oct 26 22:35:06 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:514: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/user/login/pages/2fa/setup/SelectPlatform.tsx
+[INFO  Thu Oct 26 22:35:25 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:595: Renamed index.tsx successfully
+[INFO  Thu Oct 26 23:53:48 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue Oct 31 13:36:22 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:257: Cut layout to clipboard
+[INFO  Tue Oct 31 14:18:27 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:257: Cut user to clipboard
+[INFO  Tue Oct 31 14:18:51 2023] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:257: Cut websocketUtils.ts to clipboard
+[INFO  Tue Oct 31 14:19:16 2023] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:513: Deleted directory  /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:34:33 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:34:33 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:35:59 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:35:59 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:28 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:28 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:43 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:43 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:51 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[ERROR Tue Oct 31 14:38:52 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:309: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network :  ENOENT: no such file or directory: /Users/keith/Develop/lionsbot/frontend/gcc-v2/src/network
+[INFO  Thu Nov  2 12:11:09 2023] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Thu Nov  2 12:21:55 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:21:55 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:21:56 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:10 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:19 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:19 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:19 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:47 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:22:50 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:02 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:02 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:03 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:03 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:03 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Thu Nov  2 12:23:04 2023] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
