@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec dotnet "/Users/keith/.local/share/nvim/mason/packages/omnisharp/libexec/OmniSharp.dll" "$@"
