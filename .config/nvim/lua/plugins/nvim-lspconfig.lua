@@ -5,7 +5,6 @@ return {
     servers = {
       eslint = {},
       tsserver = {
-
         typescript = {
           inlayHints = {
             includeInlayEnumMemberValueHints = true,
@@ -28,6 +27,7 @@ return {
             includeInlayVariableTypeHints = true,
           },
         },
+        typst_lsp = {},
       },
     },
   },
