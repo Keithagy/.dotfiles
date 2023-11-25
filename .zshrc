@@ -100,3 +100,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
