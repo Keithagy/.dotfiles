@@ -351,11 +351,14 @@ return {
       },
     },
   },
-  -- Configure LazyVim to load gruvbox
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+  },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
 }
