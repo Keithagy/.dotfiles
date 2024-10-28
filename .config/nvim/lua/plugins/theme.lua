@@ -1,10 +1,10 @@
 return {
   {
     "ellisonleao/gruvbox.nvim",
-    -- priority = 1000,
+    priority = 1000,
     config = true,
     opts = {
-      contrast = "soft", -- can be "hard", "soft" or empty string
+      contrast = "hard", -- can be "hard", "soft" or empty string
       dim_inactive = true,
       transparent_mode = true,
     },
@@ -358,7 +358,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin",
     },
   },
 }

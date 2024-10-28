@@ -4,11 +4,17 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export EDITOR=nvim
 
 # Flutter PATH config
 export PATH=$HOME/flutter/bin:$PATH
+
+# Go PATH config
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -17,7 +23,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # Java installation
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -69,11 +78,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  poetry
   git
   1password
   docker
   rust
-  adb
 )
 
 
@@ -100,5 +109,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+eval "$(zoxide init --cmd cd zsh)"
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# Created by `pipx` on 2024-07-03 17:23:55
+export PATH="$PATH:/Users/keithang/.local/bin"

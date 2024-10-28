@@ -1,8 +1,8 @@
 return {
   "norcalli/nvim-colorizer.lua",
   version = "*",
-  lazy = true,
+  lazy = false,
   config = function()
-    require("plugins/colorizer")
+    require("colorizer").setup()
   end,
 }
