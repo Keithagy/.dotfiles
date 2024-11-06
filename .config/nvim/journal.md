@@ -8,10 +8,6 @@ Going further with customizing lazyvim
 
 - Making my Go and cpp tooling better (especially Go which I will be working in)
   - Adding more LSP sources for go files
-- Notetaking fully within nvim
-  - [nvim obsidian](https://github.com/epwalsh/obsidian.nvim)
-  - default markdown lints are pretty annoying (keeping within line length)
-  - convenient at times for keeping consistent formatting
 - AI
   - building my own software dev team?
   - To try:
