@@ -116,3 +116,4 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # Created by `pipx` on 2024-07-03 17:23:55
 export PATH="$PATH:/Users/keithang/.local/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"

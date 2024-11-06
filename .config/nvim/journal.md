@@ -1,31 +1,20 @@
 # Current Vim Goals
 
-## Annoyed With
+## Diary
 
-- Floating window colors need to change
-- Floating windows are stuck in insert mode
-- Cannot customize mappings of what formatters to run for what filetypes
-  - Applies as well for linters, LSPs, etc
-- nvim-tree does not close upon opening a file
-- lualine does not show LSP information
-- Aerial integration can be improved
-  - When I am editing a function:
-    - Can I have a hoverview of what variables are in scope for that function?
-    - Can I have a hoverview of what globals are accessible for that function?
-  - When I am editing a class / struct:
-    - Can I have a hoverview of that struct's properties / methods?
-- No code action to fill in missing typescript interface members
+Going further with customizing lazyvim
 
-## Researching
+### What do I want?
 
-- What are buffers vs. windows vs. tabs vs. sessions?
-- What are marks?
-- What are macros?
-
-## Experimenting With
-
-- Too much to meaningfully note down at the moment
-
-## Working On
-
-- Making better use of telescope + grep
+- Making my Go and cpp tooling better (especially Go which I will be working in)
+  - Adding more LSP sources for go files
+- Notetaking fully within nvim
+  - [nvim obsidian](https://github.com/epwalsh/obsidian.nvim)
+  - default markdown lints are pretty annoying (keeping within line length)
+  - convenient at times for keeping consistent formatting
+- AI
+  - building my own software dev team?
+  - To try:
+    - [codecompanion](https://github.com/olimorris/codecompanion.nvim)
+    - [aider.nvim](https://github.com/joshuavial/aider.nvim)
+    - [parrot](https://github.com/frankroeder/parrot.nvim)
