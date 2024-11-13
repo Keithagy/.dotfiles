@@ -1,39 +1,26 @@
+# https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+tap "buo/cask-upgrade"
 tap "homebrew/bundle"
-# Simple, fast and user-friendly alternative to find
 brew "fd"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Simple terminal UI for git commands
 brew "lazygit"
-# Ambitious Vim-fork focused on extensibility and agility
+brew "mas"
 brew "neovim"
-# Platform built on V8 to build network applications
 brew "node"
-# Manage multiple Node.js versions
 brew "nvm"
-# Highly capable, feature-rich programming language
+brew "openjdk"
 brew "perl"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Powerful, clean, object-oriented scripting language
 brew "ruby"
-# Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
-# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "uv"
 brew "zellij"
-# Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
-# Command-line interface for 1Password
 cask "1password-cli"
-# GPU-accelerated terminal emulator
 cask "alacritty"
-# Client for the Dropbox cloud storage service
 cask "dropbox"
-# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Window snapping tool
 cask "rectangle-pro"
+mas "Telegram", id: 747648890

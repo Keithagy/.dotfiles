@@ -4,15 +4,7 @@ local dynamic_workspace_marker_pattern = ".nvimobsidian"
 return {
   "epwalsh/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
-  lazy = true,
-  ft = "markdown",
-  -- load this plugin only in markdown files in the vault
-  -- event = vim.tbl_map(function(event_type)
-  --   return event_type .. " " .. vault_path .. "/" .. md_file_pattern
-  -- end, {
-  --   "BufReadPre",
-  --   "BufNewFile",
-  -- }),
+  lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp", -- obsidian.nvim will set itself up as a cmp source
@@ -30,48 +22,48 @@ return {
         name = "brain-2",
         path = vault_path,
       },
-      {
-        name = "dynamic-workspace",
-        path = function()
-          local current_file = vim.api.nvim_buf_get_name(0)
-          local current_dir = assert(vim.fs.dirname(current_file))
-
-          -- Function to find workspace-marker file in current or parent directories
-          local function find_marker_file(dir)
-            local marker_path = dir .. "/" .. dynamic_workspace_marker_pattern
-            if vim.fn.filereadable(marker_path) == 1 then
-              return dir
-            end
-
-            -- Get parent directory
-            local parent = vim.fs.dirname(dir)
-            -- If we're at root, stop searching
-            if parent == dir then
-              return nil
-            end
-
-            return find_marker_file(parent)
-          end
-
-          local workspace_root = find_marker_file(current_dir)
-
-          -- If no marker file found, return a unique path to effectively disable plugin
-          if not workspace_root then
-            -- Append a unique identifier to prevent workspace recognition
-            return current_dir .. "_disabled_" .. os.time()
-          end
-
-          return workspace_root
-        end,
-        overrides = {
-          notes_subdir = vim.NIL,
-          new_notes_location = "current_dir",
-          templates = {
-            folder = vim.NIL,
-          },
-          disable_frontmatter = true,
-        },
-      },
+      -- {
+      --   name = "dynamic-workspace",
+      --   path = function()
+      --     local current_file = vim.api.nvim_buf_get_name(0)
+      --     local current_dir = assert(vim.fs.dirname(current_file))
+      --
+      --     -- Function to find workspace-marker file in current or parent directories
+      --     local function find_marker_file(dir)
+      --       local marker_path = dir .. "/" .. dynamic_workspace_marker_pattern
+      --       if vim.fn.filereadable(marker_path) == 1 then
+      --         return dir
+      --       end
+      --
+      --       -- Get parent directory
+      --       local parent = vim.fs.dirname(dir)
+      --       -- If we're at root, stop searching
+      --       if parent == dir then
+      --         return nil
+      --       end
+      --
+      --       return find_marker_file(parent)
+      --     end
+      --
+      --     local workspace_root = find_marker_file(current_dir)
+      --
+      --     -- If no marker file found, return a unique path to effectively disable plugin
+      --     if not workspace_root then
+      --       -- Append a unique identifier to prevent workspace recognition
+      --       return current_dir .. "_disabled_" .. os.time()
+      --     end
+      --
+      --     return workspace_root
+      --   end,
+      --   overrides = {
+      --     notes_subdir = vim.NIL,
+      --     new_notes_location = "current_dir",
+      --     templates = {
+      --       folder = vim.NIL,
+      --     },
+      --     disable_frontmatter = true,
+      --   },
+      -- },
     },
 
     -- Alternatively - and for backwards compatibility - you can set 'dir' to a single path instead of
@@ -79,7 +71,7 @@ return {
     -- dir = "~/vaults/work",
 
     -- Optional, if you keep notes in a specific subdirectory of your vault.
-    notes_subdir = "notes",
+    notes_subdir = "zk",
 
     -- Optional, set the log level for obsidian.nvim. This is an integer corresponding to one of the log
     -- levels defined by "vim.log.levels.*".

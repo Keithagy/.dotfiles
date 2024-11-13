@@ -6,7 +6,7 @@ return {
   opts = {
     provider = "claude",
     claude = {
-      api_key_name = "cmd:op item get claude-api-key --fields label=credential --reveal",
+      api_key_name = "cmd:op item get claude-api-key-nvim --fields label=credential --reveal",
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`

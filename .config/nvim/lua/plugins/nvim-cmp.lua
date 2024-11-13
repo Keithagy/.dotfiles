@@ -73,6 +73,7 @@ return { -- Autocompletion
           group_index = 0,
         },
         { name = "supermaven" },
+        { name = "codeium" },
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "path" },
