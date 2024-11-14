@@ -8,11 +8,3 @@ vim.keymap.set({ "n" }, "<leader>ws", function()
 end, { desc = "Select window" })
 
 vim.keymap.set({ "n" }, "<leader>wz", [[:ZenMode<CR>]], { desc = "Toggle zen mode for current window" })
-
--- disable lazyvim default mappings
-vim.keymap.del("n", "<S-h>")
-vim.keymap.del("n", "<S-l>")
-vim.keymap.del("n", "[b")
-vim.keymap.del("n", "]b")
-vim.keymap.del("n", "<leader>bb")
-vim.keymap.del("n", "<leader>`")
