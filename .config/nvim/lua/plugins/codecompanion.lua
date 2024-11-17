@@ -9,10 +9,19 @@ return {
     { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown", "codecompanion" } }, -- Optional: For prettier markdown rendering
     { "stevearc/dressing.nvim", opts = {} }, -- Optional: Improves `vim.ui.select`
   },
-  opts = {
-    display = {
-      diff = { provider = "mini_diff" },
+  keys = {
+    { "<leader>ac", mode = { "n", "v" }, "", desc = "Code Companion.." },
+    { "<leader>aca", mode = { "n", "v" }, "<cmd>CodeCompanionActions<cr>", desc = "Code Companion Actions" },
+    { "<leader>aci", mode = { "n", "v" }, "<cmd>CodeCompanion<cr>", desc = "Code Companion (Inline)" },
+    { "<leader>acc", mode = { "n", "v" }, "<cmd>CodeCompanionChat Toggle<cr>", desc = "Code Companion Chat (Toggle)" },
+    {
+      "<leader>acr",
+      mode = { "v" },
+      "<cmd>CodeCompanionChat Add<cr>",
+      desc = "Reference selected text in Code Companion Chat buffer",
     },
+  },
+  opts = {
     adapters = {
       anthropic = function()
         return require("codecompanion.adapters").extend("anthropic", {
@@ -25,6 +34,23 @@ return {
     strategies = {
       chat = {
         adapter = "anthropic",
+        slash_commands = {
+          ["buffer"] = {
+            opts = {
+              provider = "telescope", -- default|telescope|mini_pick|fzf_lua
+            },
+          },
+          ["file"] = {
+            opts = {
+              provider = "telescope", -- default|telescope|mini_pick|fzf_lua
+            },
+          },
+          ["symbols"] = {
+            opts = {
+              provider = "telescope", -- default|telescope|mini_pick|fzf_lua
+            },
+          },
+        },
       },
       inline = {
         adapter = "anthropic",

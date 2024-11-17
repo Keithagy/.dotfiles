@@ -24,4 +24,5 @@ cask "dropbox"
 cask "obsidian"
 cask "rectangle-pro"
 cask "slack"
+cask "zed"
 mas "Telegram", id: 747648890
